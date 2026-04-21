@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icons-and-logo/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Tunify : Your Music - Your World</title>
+</head>
+<body>
+    <div class="mobile-view">
+    <div class="mobile-card">
+        <div class="mobile-logo">
+            <img src="icons-and-logo/logo.svg" alt="logo" class="mobile-logo-img">
+        </div>
+        <h1 class="mobile-title">Melodify</h1>
+        <p class="mobile-subtitle">Your Music - Your World</p>
+        <div class="mobile-divider"></div>
+        <p class="mobile-msg">We're still building the mobile experience. For the best experience, please enable <span class="mobile-highlight">Desktop Mode</span> in your browser.</p>
+        <div class="mobile-steps">
+            <div class="mobile-step">
+                <span class="mobile-step-num">1</span>
+                <span>Open your browser menu</span>
+            </div>
+            <div class="mobile-step">
+                <span class="mobile-step-num">2</span>
+                <span>Tap "Desktop Site"</span>
+            </div>
+            <div class="mobile-step">
+                <span class="mobile-step-num">3</span>
+                <span>Enjoy Melodify!</span>
+            </div>
+        </div>
+        <p class="mobile-footer">🎵 Full mobile version coming soon</p>
+    </div>
+</div>
+    <div class="main">
+        <div class="sidebar hidee">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+
+            <div class="library">
+                <div class="options">
+                    <div class="lib-options nav-option" >
+                         <img src="icons-and-logo/library_icon.png" style="cursor: pointer;" alt="library">
+                        <a href="#" style="font-weight: 500;">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus" style="cursor: pointer;"></i>
+                        <i class="fa-solid fa-arrow-right" style="cursor: pointer;"></i>
+                    </div>
+                </div>
+                <div class="lib-boxes">
+                    <div class="boxes">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                           <div class="tooltip-wrap">
+                              <button class="badge aas">Create Playlist</button>
+                               <span class="tooltip-msg">Currently not available</span>
+                          </div>
+                    </div>
+                     <div class="boxess">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <div class="tooltip-wrap">
+                            <button class="badge aas">Browse podcasts</button>
+                             <span class="tooltip-msg">Currently not available</span>
+                       </div>
+                     
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="main-content"> 
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                <img src="icons-and-logo/backward_icon.png" class="rew" alt="backward">
+                <img id="forward" class="rew hide" src="icons-and-logo/forward_icon.png" alt="forward">
+                </div>
+                <div class="stick-nav-options">
+                  <button class="badge navs hide des" onclick="openPremiumBanner()">Explore Premium</button>
+                  <!-- <div class="darkk">
+                     <button class="badge navs dark"><i class="fa-regular fa-circle-down dark" style="margin-right:5px;"></i>Install App</button>
+                 </div> -->
+                     <div class="darkk tooltip-wrap">
+                    <button class="badge navs dark">
+                     <i class="fa-regular fa-circle-down dark" style="margin-right:5px;" ></i>Install App
+                  </button>
+                 <span class="tooltip-msg">Currently not available</span>
+           </div>
+                  
+
+                 
+                  <i class="fa-solid fa-user users" style="margin-right: 10px; margin-left: 10px;"></i>
+                </div>   
+            </div>
+            
+                <h2 id="rt">Top Charts: Global & India</h2>
+                <div class="cards-container">
+                    <div class="card">
+                       <div class="freds">
+                         <img src="card1img.jpeg" class="card-img" alt="Recently-played">
+                         <img src="icons-and-logo/song_hover.png" class="play" alt="play">
+                       </div> 
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Top 50 Global features the most-streamed and trending songs...</p>
+                        <h5 style="color: rgb(225, 246, 194); font-family: cursive; font-style: italic;">COMING SOON</h5>
+                    </div>
+                     <div class="card">
+                       <div class="freds">
+                         <img src="top songs india.jpeg" class="card-img" alt="Recently-played">
+                         <img src="icons-and-logo/song_hover.png" class="play" alt="play">
+                       </div> 
+                        <p class="card-title">Top Songs - India</p>
+                        <p class="card-info">Top Songs India features the most-streamed across India right now...</p>
+                          <h5 style="color: rgb(225, 246, 194); font-family: cursive; font-style: italic;">COMING SOON</h5>
+                    </div>
+                </div>
+
+                 <h2 id="rt">Albums featuring songs you like</h2>
+                <div class="cards-container">
+                    <div class="card" id="aisha">
+                        <div class="freds">
+                         <img src="songs1-cover-image/aisha banna.jpg" class="card-img" alt="Recently-played">
+                          <img src="icons-and-logo/song_hover.png" class="play" alt="play">
+                        </div>
+                        <p class="card-title" id="aisha-title">Aisa Banna Sawarna Mubarak Tumhen</p>
+                        <p class="card-info" id="aisha-singer">Anjum Hussain</p>
+                    </div>
+                    <div class="card" id="kali">
+                        <div class="freds">
+                          <img src="songs1-cover-image/kali - kali.jpg" class="card-img" alt="Recently-played">
+                           <img src="icons-and-logo/song_hover.png" class="play" alt="play">
+                        </div>
+                        <p class="card-title">Kali Kali Zulfon Ke (Lo-Fi)</p>
+                        <p class="card-info">Madhur Sharma,Swapnil Tare,Nusrat Fateh Ali Khan</p>
+                    </div>
+                    <div class="card" id="tum">
+                        <div class="freds"><img src="songs1-cover-image/tum hi ho bandhu.jpg" class="card-img" alt="Recently-played">
+                             <img src="icons-and-logo/song_hover.png" class="play" alt="play">
+                        </div>
+                        <p class="card-title">Tum Hi Ho Bandhu</p>
+                        <p class="card-info">Pritam,Neeraj Shridhar,Kavita Seth</p>
+                    </div>
+                    <div class="card" id="itni">
+                        <div class="freds">
+                            <img src="songs1-cover-image/itni si baat hai.jpg" class="card-img" alt="Recently-played">
+                             <img src="icons-and-logo/song_hover.png" class="play" alt="play">
+                        </div>
+                        <p class="card-title">Itni Si Baat Hain (From "Azhar")</p>
+                        <p class="card-info">Arijit Singh,Antara Mitra</p>
+                    </div>
+                    <div class="card" id="kamhn">
+                       <div class="freds">
+                         <img src="songs1-cover-image/kamHn.jpg" class="card-img" alt="Recently-played">
+                          <img src="icons-and-logo/song_hover.png" class="play" alt="play">
+                       </div>
+                        <p class="card-title">Камин (feat. JONY)</p>
+                        <p class="card-info">EMIN,JONY</p>
+                    </div>
+                    <div class="card" id="rabb">
+                        <div class="freds">
+                         <img src="songs1-cover-image/raab maneya.jpg" class="card-img" alt="Recently-played">
+                          <img src="icons-and-logo/song_hover.png" class="play" alt="play">
+                        </div>
+                        <p class="card-title" id="rabb-title">Rabb Manneya</p>
+                        <p class="card-info" id="rabb-singer">Lakhwinder,Neeti Mohan</p>
+                    </div>
+                    <div class="card" id="sahiba">
+                        <div class="freds">
+                         <img src="songs1-cover-image/sahiba.jpg" class="card-img" alt="Recently-played">
+                          <img src="icons-and-logo/song_hover.png" class="play" alt="play">
+                        </div>
+                        <p class="card-title" id="sahiba-title">Sahiba</p>
+                        <p class="card-info" id="sahiba-singer">Jasleen Royal,Stebin Ben,Vijay Deverakonda,Radhikka Madan,Priya Saraiya</p>
+                    </div>
+                     
+                </div>
+                 <h2 id="rt">Recently played</h2>
+                <div class="cards-container">
+                    <div class="card" id="nights">
+                       <div class="freds">
+                         <img src="songs2-cover-image/the nights.jpg" class="card-img" alt="Recently-played">
+                          <img src="icons-and-logo/song_hover.png" class="play" alt="play">
+                       </div>
+                        <p class="card-title">The Nights</p>
+                        <p class="card-info">Avicii</p>
+                    </div>
+                     <div class="card" id="tera">
+                       <div class="freds">
+                         <img src="songs2-cover-image/tera zikr.jpg" class="card-img" alt="Recently-played">
+                         <img src="icons-and-logo/song_hover.png" class="play" alt="play">
+                       </div>
+                        <p class="card-title">Tera Zikr</p>
+                        <p class="card-info">Darshan Raval</p>
+                    </div>
+                     <div class="card" id="snap">
+                       <div class="freds">
+                         <img src="songs2-cover-image/snap.jpg" class="card-img" alt="Recently-played">
+                          <img src="icons-and-logo/song_hover.png" class="play" alt="play">
+                       </div>
+                        <p class="card-title">SNAP - Low and Slow</p>
+                        <p class="card-info">Rosa Linn</p>
+                    </div>
+                      <div class="card" id="teri">
+                       <div class="freds" id="teri">
+                         <img src="songs2-cover-image/teri jhuki najar.jpg" class="card-img" alt="Recently-played">
+                          <img src="icons-and-logo/song_hover.png" class="play" alt="play">
+                       </div>
+                        <p class="card-title">Teri Jhuki Nazar - Lofi</p>
+                        <p class="card-info">Kritiman Mishra,Shafqat Amanat Ali</p>
+                    </div>
+                     <div class="card" id="raat">
+                       <div class="freds" id="raat">
+                         <img src="songs2-cover-image/raatbhar.jpg" class="card-img" alt="Recently-played">
+                          <img src="icons-and-logo/song_hover.png" class="play" alt="play">
+                       </div>
+                        <p class="card-title">Raat bhar - Lofi</p>
+                        <p class="card-info">Arijit Singh, Shreya Ghoshal, Kausar Munir, Sajid Wajid</p>
+                    </div>
+                  
+                   
+            </div> 
+                   <div class="footer">
+                        <div class="line"> 
+                            <!-- <button type="button" id="Request" class="badge des">Request a song</button> -->
+                        </div>
+                      </div>
+                 </div>
+                 
+                      
+             </div>
+
+           
+        <div class="music-player">
+             <div class="album">
+                <div><img src="icons-and-logo/black.png" alt="song logo" class="song-icon" id="cover-image"></div>
+                <audio id="song" typ="audio/mpeg"></audio>
+                <div class="songd">
+                    <a href="#" class="song-name hidee"></a>
+                    <a href="#" class="singer hidee"></a>
+                </div>
+                <div class="plus-song">
+                    <img src="icons-and-logo/add_circle_icon.png" alt="plus-song">
+                </div>
+            </div>
+            <div class="player">
+                <div class="players-control">
+                       <div class="tooltip-wrap">
+                            <i class="fa-solid fa-shuffle player-control-icon" id="shuffbtn"></i>
+                             <span class="tooltip-msg">Shuffle</span>
+                       </div>
+                    <i class="fa-solid fa-backward-step player-control-icon" id="prvsong"></i>
+                    <img src="icons-and-logo/player_icon3.png" id="playbtn" alt="player-icon" class="player-control-iconn">
+                    <i class="fa-solid fa-forward-step player-control-icon" id="nextsong"></i>
+                     <div class="tooltip-wrap">
+                          <i id="repeat" class="fa-solid fa-repeat player-control-icon"></i>
+                             <span class="tooltip-msg">Repeat</span>
+                       </div>
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time" id="currtime">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" id="progressbar" step="0.5">
+                    
+                    <span class="tot-time" id="duration">00:00</span>
+                </div>
+            </div>
+            <div class="controls hidee">
+                <div class="control">
+                    <i class="fa-solid fa-list list dd" style="font-size: 1rem;"></i>
+                    <img src="icons-and-logo/lyrics_icon.svg" alt="lyrics" class="lyrics dd">
+                    <img src="icons-and-logo/google_home.png" alt="device" class="device dd">
+                    <div class="soundd">
+                         <i class="fa-solid fa-volume-high sound dd" style="font-size: 0.9rem;"></i>
+                    <input type="range" min="0" max="100" class="sound-range dd">
+                    </div>
+                    <img src="icons-and-logo/picture_in_picture_icon.png" alt="miniplayer" class="miniplayer dd">
+                    <img src="icons-and-logo/expand_content.png" alt="fullscreen" class="fullscreen dd">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="premium-overlay" id="premiumOverlay" onclick="handleOverlayClick(event)">
+  <div class="premium-banner" id="premiumBanner">
+    <button class="premium-close" onclick="closePremiumBanner()">&#x2715;</button>
+    <h2 class="premium-title">Premium is coming!</h2>
+    <p class="premium-msg">We're working hard to bring you an amazing Premium experience — ad-free music, offline listening, and much more.</p>
+    <div class="premium-pill-row">
+      <span class="premium-pill">🎵 Ad-free</span>
+      <span class="premium-pill">📥 Offline</span>
+      <span class="premium-pill">🔊 High Quality</span>
+    </div>
+    <button class="premium-notify-btn" onclick="closePremiumBanner()">Got it, can't wait!</button>
+  </div>
+</div>
+</body>
+ <script src="script.js"></script>
+</html> 
