@@ -91,20 +91,15 @@
                 <img id="forward" class="rew hide" src="icons-and-logo/forward_icon.png" alt="forward">
                 </div>
                 <div class="stick-nav-options">
+                 <button type="button" id="Request" style="background-color: rgb(196, 255, 239);" class="badge navs hide des" onclick="openReqBanner()">Request a Song</button>
                   <button class="badge navs hide des" onclick="openPremiumBanner()">Explore Premium</button>
-                  <!-- <div class="darkk">
-                     <button class="badge navs dark"><i class="fa-regular fa-circle-down dark" style="margin-right:5px;"></i>Install App</button>
-                 </div> -->
                      <div class="darkk tooltip-wrap">
                     <button class="badge navs dark">
                      <i class="fa-regular fa-circle-down dark" style="margin-right:5px;" ></i>Install App
                   </button>
                  <span class="tooltip-msg">Currently not available</span>
            </div>
-                  
-
-                 
-                  <i class="fa-solid fa-user users" style="margin-right: 10px; margin-left: 10px;"></i>
+               <i class="fa-solid fa-user users" style="margin-right: 10px; margin-left: 10px;"></i>
                 </div>   
             </div>
             
@@ -236,7 +231,6 @@
             </div> 
                    <div class="footer">
                         <div class="line"> 
-                            <!-- <button type="button" id="Request" class="badge des">Request a song</button> -->
                         </div>
                       </div>
                  </div>
@@ -297,13 +291,28 @@
   <div class="premium-banner" id="premiumBanner">
     <button class="premium-close" onclick="closePremiumBanner()">&#x2715;</button>
     <h2 class="premium-title">Premium is coming!</h2>
-    <p class="premium-msg">We're working hard to bring you an amazing Premium experience — ad-free music, offline listening, and much more.</p>
-    <div class="premium-pill-row">
+    <p class="premium-msg">I am working hard to bring you an amazing Premium experience.</p>
+    <!-- <div class="premium-pill-row">
       <span class="premium-pill">🎵 Ad-free</span>
       <span class="premium-pill">📥 Offline</span>
       <span class="premium-pill">🔊 High Quality</span>
-    </div>
+    </div> -->
     <button class="premium-notify-btn" onclick="closePremiumBanner()">Got it, can't wait!</button>
+  </div>
+</div>
+    <div class="req-overlay" id="reqOverlay" onclick="handleReqOverlay(event)">
+  <div class="req-banner">
+    <button class="premium-close" onclick="closeReqBanner()">&#x2715;</button>
+    <div class="req-icon">
+      <i class="fa-solid fa-music"></i>
+    </div>
+    <h3 class="req-title">Request a Song</h3>
+    <p class="req-sub">I will try our best to add it before Sunday!</p>
+    <input type="text" id="reqName" placeholder="Your name" class="req-input">
+    <input type="text" id="reqSong" placeholder="Song name" class="req-input">
+    <input type="text" id="reqSinger" placeholder="Singer name" class="req-input">
+    <button class="req-submit" onclick="submitRequest()">Submit Request</button>
+    <p id="reqMsg" class="req-msg"></p>
   </div>
 </div>
 </body>
