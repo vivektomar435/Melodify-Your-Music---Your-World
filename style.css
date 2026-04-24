@@ -797,3 +797,91 @@ display: none;
     visibility: visible;
     opacity: 1;
 }
+.req-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    animation: overlayFadeIn 0.2s ease;
+}
+.req-overlay.active {
+    display: flex;
+}
+.req-banner {
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 1rem;
+    padding: 2rem 2.5rem;
+    width: 320px;
+    max-width: 90vw;
+    text-align: center;
+    position: relative;
+    animation: bannerSlideUp 0.25s ease;
+}
+.req-icon {
+    background-color: #1bd760;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+.req-icon i {
+    color: black;
+    font-size: 1.1rem;
+}
+.req-title {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 4px;
+}
+.req-sub {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    margin: 0 0 1.2rem;
+}
+.req-input {
+    width: 100%;
+    box-sizing: border-box;
+    background: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 0.5rem;
+    padding: 10px 14px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+.req-input:focus {
+    outline: none;
+    border-color: #1bd760;
+}
+.req-submit {
+    width: 100%;
+    background: #1bd760;
+    color: black;
+    border: none;
+    border-radius: 100px;
+    padding: 0.65rem;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-top: 4px;
+    transition: opacity 0.15s;
+}
+.req-submit:hover {
+    opacity: 0.85;
+}
+.req-msg {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    min-height: 1rem;
+    font-family: "Montserrat", sans-serif;
+}
